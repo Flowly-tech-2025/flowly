@@ -159,28 +159,28 @@ footer img {
     }
 
     nav ul li a {
-        font-size: 0.8rem; /* Restaurar tamanho da fonte */
-        padding: 10px 15px; /* Restaurar padding */
+        font-size: 0.7rem; /* Restaurar tamanho da fonte */
+        padding: 5px 10px; /* Restaurar padding */
     }
 
     .footer-left p {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .footer-center a {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     footer img {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 }
 
 /* 765px e acima - Mantém as regras específicas para esta resolução */
 @media screen and (min-width: 765px) {
     footer p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .footer-right {
@@ -208,7 +208,7 @@ footer img {
         color: white;
         padding: 5px 10px;
         gap: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
         border-radius: 5px;
         font-weight: bold;
         text-decoration: none;
@@ -226,7 +226,7 @@ footer img {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 3px;
+        height: 2.5px;
         background: #ff3e3e;
         transform: scaleX(0);
         transform-origin: right;
@@ -264,16 +264,16 @@ footer img {
 
     /* Aumentar font-size do footer */
     footer p {
-        font-size: 1.1rem; /* Aumentado para desktop */
+        font-size: 0.9rem; /* Aumentado para desktop */
     }
 
     footer a {
-        font-size: 1.1rem; /* Aumentado para desktop */
+        font-size: 0.9rem; /* Aumentado para desktop */
     }
 
     footer img {
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
 
     .footer-right {
