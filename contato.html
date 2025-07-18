@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/contato.css">
+    <link rel="stylesheet" href="estilo/global.css">
+    <link rel="shortcut icon" href="img/icone.png.jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/cookies.css">
+    <script src="js/cookies.js"></script>
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="img/logonovo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div class="contact-container-wrapper">
+            <section class="contact-section">
+                <h2>Entre em Contato</h2>
+                <p class="contact-intro">Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+                
+                <form id="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto">Assunto*</label>
+                        <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </div>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><strong>Telefone:</strong> (16) 99291-5540</p>
+                    <p><strong>Email:</strong> contato@flowly.com</p>
+                    <p><strong>Horário de Atendimento:</strong> Segunda a Sexta, 9h às 18h</p>
+                    <div class="social-contact">
+                        <p><strong>Redes Sociais:</strong> <a href="https://www.instagram.com/flowly_sites?igsh=ZjFkZXNkNTR3NzB3&utm_source=qr" target="_blank" class="social-link">Instagram</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <footer>
+        <section class="footer-left">
+            <p><small>Flowly © Copyright 2025</small></p>
+        </section>
+        <section class="footer-center">
+            <nav aria-label="Links do rodapé">
+                <a href="privacidade.html"><strong>Política de Privacidade</strong></a>
+            </nav>
+        </section>
+        <section class="footer-right">
+            <a href="https://wa.me/5516992915540" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;"><img src="img/whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/flowly_sites?igsh=ZjFkZXNkNTR3NzB3&utm_source=qr" target="_blank"><img src="img/instagram-removebg-preview.png" alt="Instagram da empresa"></a>
+        </section>
+    </footer>
+    
+    <script src="js/contato.js"></script>
+</body>
+</html>

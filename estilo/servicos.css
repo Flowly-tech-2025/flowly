@@ -1,0 +1,198 @@
+/* Global box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile-first styles */
+main {
+    padding-top: 80px; /* Adjust based on your fixed header height */
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0 auto; /* Ensure main is centered */
+}
+
+.services-container {
+    max-width: 1400px;
+    margin: 80px auto; /* Center the container */
+    padding: 20px; /* Default padding for the container */
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-main-title {
+    font-size: 3.5rem;
+    margin-top: -70px;
+    color: #ff3e3e;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-subtitle {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 40px;
+    margin-top: 50px;
+    padding: 0 20px; /* Padding for the grid items */
+    max-width: 100%; /* Ensure grid does not overflow */
+    margin: 50px auto 0 auto; /* Center the grid and adjust top margin */
+}
+
+.service-card-modern {
+    background: #000000;
+    border-radius: 15px; /* Added border-radius */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease; /* Smooth transition for all properties */
+    box-shadow: 0 8px 25px rgba(255, 62, 62, 0.15);
+    border: 1px solid #333;
+}
+
+.service-card-modern:hover {
+    transform: translateY(-8px) scale(1.02); /* Animation on hover */
+    box-shadow: 0 15px 35px rgba(255, 62, 62, 0.25);
+    border-color: #ff3e3e;
+}
+
+.card-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 15px; /* Apply border-radius to top corners */
+    border-top-right-radius: 15px;
+}
+
+.service-image-modern {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.service-card-modern:hover .service-image-modern {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 62, 62, 0.8), rgba(0, 0, 0, 0.6));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card-modern:hover .image-overlay {
+    opacity: 1;
+}
+
+.overlay-icon {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card-content-modern {
+    padding: 30px 25px;
+}
+
+.service-title-modern {
+    color: #ff3e3e;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-description-modern {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feature-tag {
+    background: rgba(255, 62, 62, 0.1);
+    color: #ff3e3e;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 62, 62, 0.3);
+}
+
+/* Adjustments for very small screens (e.g., below 475px) */
+@media (max-width: 475px) {
+    .services-container {
+        padding: 10px; /* Reduce container padding for very small screens */
+    }
+
+    .services-grid {
+        padding: 0 10px; /* Reduce grid padding for very small screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-main-title {
+        font-size: 2.5rem;
+    }
+
+    .services-subtitle {
+        font-size: 1em;
+    }
+
+    .service-title-modern {
+        font-size: 1.2rem;
+    }
+
+    .service-description-modern {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet styles (768px and above) */
+@media (min-width: 768px) {
+    .services-main-title {
+        margin-top: 5px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 40px;
+    }
+}
+
+/* Desktop styles (1024px and above) */
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 80px;
+    }
+
+    .services-header h1 {
+        font-size: 2.5rem;
+    }
+}

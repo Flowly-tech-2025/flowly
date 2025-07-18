@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url('../img/fundonovo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 80px; /* Adicionar espaço para o header fixo */
+    padding-bottom: 80px;
+    position: relative;
+}
+
+/* Mobile First Styles */
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 15px;
+    z-index: 9999;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Ajustado para mobile */
+}
+
+.logo img {
+    width: 120px; /* Ajustado para mobile */
+}
+
+nav {
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    gap: 2px; /* Ajustado para mobile */
+    list-style: none;
+    padding: 5px 0; /* Ajustado para mobile */
+    flex-wrap: wrap; /* Permitir que os itens do menu quebrem linha se necessário */
+    justify-content: space-around; /* Distribuir espaço entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem; /* Ajustado para mobile */
+    padding: 8px 5px; /* Ajustado para mobile */
+}
+
+nav a:hover {
+    background: transparent;
+            color: #ff3e3e;
+            border-color: #ff3e3e;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 62, 62, 0.4);
+    /*background-color: #ff3e3e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #000000;*/
+}
+
+nav a.active {
+    background-color: #ff3e3e;
+    color: white;
+}
+
+/* Footer - Base styles (mobile) */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-left p {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Tablet (768px e acima) */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 15px; /* Restaurar padding original */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Restaurar margem original */
+    }
+
+    .logo img {
+        width: 250px; /* Restaurar tamanho original do logo */
+    }
+
+    nav ul {
+        gap: 20px; /* Restaurar gap original */
+        flex-wrap: nowrap; /* Impedir quebra de linha */
+        justify-content: center; /* Centralizar novamente */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Restaurar tamanho da fonte */
+        padding: 10px 15px; /* Restaurar padding */
+    }
+
+    .footer-left p {
+        font-size: 1rem;
+    }
+
+    .footer-center a {
+        font-size: 1rem;
+    }
+
+    footer img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* 765px e acima - Mantém as regras específicas para esta resolução */
+@media screen and (min-width: 765px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: row; /* Garante que os itens fiquem em linha */
+        align-items: center;
+        gap: 10px; /* Espaçamento entre os ícones */
+        justify-content: flex-end;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row; /* Garante que os ícones dentro de social-icons fiquem em linha */
+        align-items: center;
+        gap: 10px; /* Espaçamento entre os ícones */
+        height: 100%;
+    }
+}
+
+/* Desktop (1024px e acima) */
+@media screen and (min-width: 1024px) {
+    nav ul li a {
+        display: inline-block;
+        background-color:#ff3e3e;
+        color: white;
+        padding: 5px 10px;
+        gap: 0;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    nav ul li a:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #ff3e3e;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        z-index: -1;
+    }
+
+    nav ul li a:hover {
+        background: transparent;
+            color: #ff3e3e;
+            border-color: #ff3e3e;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 62, 62, 0.4);
+       /* color: rgb(0, 0, 0);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 62, 62, 0.2);*/
+    }
+
+    nav ul li a:hover:before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    nav ul li a:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilo para o link da página atual */
+    nav ul li a.active {
+        background-color: #ff3e3e;
+        border-color: #ff3e3e;
+        color: white;
+    }
+
+    /* Aumentar font-size do footer */
+    footer p {
+        font-size: 1.1rem; /* Aumentado para desktop */
+    }
+
+    footer a {
+        font-size: 1.1rem; /* Aumentado para desktop */
+    }
+
+    footer img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: row; /* Garante que os itens fiquem em linha */
+        align-items: center;
+        gap: 10px; /* Espaçamento entre os ícones */
+        justify-content: flex-end;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row; /* Garante que os ícones dentro de social-icons fiquem em linha */
+        align-items: center;
+        gap: 10px; /* Espaçamento entre os ícones */
+        height: 100%;
+    }
+}

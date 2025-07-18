@@ -1,0 +1,191 @@
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    margin-top:110px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.block {
+    background-color: #00000069;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.red-text {
+    color: #ff3e3e;
+}
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Reduzir padding para telas menores */
+}
+
+
+.slider {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.explore-btn {
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    display: none;
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem; /* Reduzido para mobile */
+    cursor: pointer;
+    padding: 0;
+}
+
+
+/* Tablet (768px e acima) */
+@media screen and (min-width: 768px) {
+    
+    .hero-section {
+        margin-top: 150px; /* Restaurar margem original */
+        gap: 20px; /* Restaurar gap original */
+    }
+
+    .text-blocks {
+        margin-bottom: 10px; /* Restaurar margem original */
+    }
+
+    .hero-image {
+        margin-top: -50px; /* Restaurar margem original */
+    }
+
+    .explore-btn {
+        margin-bottom: 0; /* Remover margem inferior se não for mais necessária */
+    }
+    .explore-btn:hover {
+        color: #000000;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+/* 765px e acima - Mantém as regras específicas para esta resolução */
+@media screen and (min-width: 765px) {
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 130px; /* Pode precisar ajustar se o header mudar muito */
+    }
+
+    .hero-content {
+        text-align: left;
+        margin-left: 80px;
+        margin-top: 100px;
+        align-items: flex-start;
+    }
+
+    .block {
+        margin: 0;
+    }
+
+    .hero-image {
+        margin-top:0;
+    }
+    .explore-btn {
+        margin-left: 0;
+    }
+    
+}
+
+
+/* Desktop (1024px e acima) */
+@media screen and (min-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 40px;
+        margin-top: 150px;
+        padding: 40px;
+    }
+
+    .hero-content {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .block {
+        font-size: 3rem;
+        margin: 0;
+        margin-left: 100px;
+    }
+
+    .slider {
+        max-width: 1000px;
+        margin-top: -150px;
+    }
+
+    .phone-mockup {
+        max-height: 1000px;
+    }
+
+    .explore-btn {
+        font-size: 1.5rem;
+        margin-left: 100px;
+    }
+    .explore-btn:hover {
+        background: transparent;
+            color: #ff3e3e;
+            border-color: #ff3e3e;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 62, 62, 0.4);
+      
+    }
+
+}

@@ -1,0 +1,98 @@
+/* Mobile First */
+.about-section {
+    padding: 20px;
+    margin-top: 50px; /* Adjust based on header height */
+    text-align: left;
+}
+
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.welcome-content h1 {
+    color: #ff3e3e;
+    margin-top: 50px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome-text p {
+    color: #ffff;
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff3e3e;
+    text-align: center;
+    margin-top: 20px;
+}
+.cta-text a {
+    color: #ffffff;
+    background-color: #ff3e3e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.cta-text a:hover {
+            background: transparent;
+            color: #ff3e3e;
+            border-color: #ff3e3e;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 62, 62, 0.4);
+}
+
+
+/* Tablet (768px e acima) */
+@media screen and (min-width: 768px) {
+    .about-section {
+        padding: 40px;
+        margin-top: 120px;
+    }
+
+    .welcome-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .welcome-text p {
+        font-size: 1.1rem;
+    }
+
+    .cta-text {
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* Desktop (1024px e acima) */
+@media screen and (min-width: 1024px) {
+    .about-section {
+        padding: 60px 100px;
+    }
+
+    .welcome-content {
+        max-width: 900px;
+    }
+
+    .welcome-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .welcome-text p {
+        font-size: 1.15rem;
+    }
+
+    .cta-text {
+        font-size: 1.3rem;
+    }
+}
