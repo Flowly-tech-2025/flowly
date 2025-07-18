@@ -149,17 +149,17 @@ footer img {
     }
 
     .logo img {
-        width: 250px; /* Restaurar tamanho original do logo */
+        width: 220px; /* Restaurar tamanho original do logo */
     }
 
     nav ul {
-        gap: 20px; /* Restaurar gap original */
+        gap: 10px; /* Restaurar gap original */
         flex-wrap: nowrap; /* Impedir quebra de linha */
         justify-content: center; /* Centralizar novamente */
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Restaurar tamanho da fonte */
+        font-size: 0.8rem; /* Restaurar tamanho da fonte */
         padding: 10px 15px; /* Restaurar padding */
     }
 
