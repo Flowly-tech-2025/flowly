@@ -159,16 +159,16 @@ footer img {
     }
 
     nav ul li a {
-        font-size: 9rem; /* Restaurar tamanho da fonte */
+        font-size: 0.9rem; /* Restaurar tamanho da fonte */
         padding: 5px 10px; /* Restaurar padding */
     }
 
     .footer-left p {
-        font-size: 9rem;
+        font-size: 0.9rem;
     }
 
     .footer-center a {
-        font-size: 9rem;
+        font-size: 0.9rem;
     }
 
     footer img {
