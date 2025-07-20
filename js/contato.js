@@ -61,11 +61,17 @@ document.addEventListener('DOMContentLoaded', function() {
             .form-success {
                 background-color: rgba(0, 128, 0, 0.8);
                 color: white;
-                padding: 15px;
+                padding: 6px 10px; // Ainda menor
                 border-radius: 5px;
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
                 font-weight: 600;
+                height: 40px; // Altura menor
+                font-size: 0.9rem; // Fonte ainda menor
+                max-width: 350px; // Largura ainda mais limitada
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
         `;
         document.head.appendChild(style);
